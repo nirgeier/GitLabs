@@ -1,0 +1,56 @@
+#!/bin/sh
+
+##
+## Author: Nir Geier nir.geier@gmail.com
+##
+
+# This is the file we want to check
+FILE_NAME="secret.txt"
+
+# Output colors
+RED='\033[0;31m';
+GREEN='\033[0;32m';
+YELLOW='\033[0;33m';
+NO_COLOR='\033[0;m';
+
+# Redirect output to screen.
+exec 1>&2
+
+# Check to see if we have updated the secret.txt file
+echo "${RED}[hook] : $FILE_NAME Found in commit !!! - commit aborted ${NO_COLOR}"
+if [ $(git diff --cached --name-only --diff-filter=ACM | grep $FILE_NAME ) ];
+then
+	echo "${RED}---------------------------------------------------------------- ${NO_COLOR}"
+	echo "${RED}$FILE_NAME Found in commit !!! - commit aborted ${NO_COLOR}"
+
+	# personal touch :-)
+	echo "${YELLOW}"
+	echo "                                         "
+	echo "                   |ZZzzz                "
+	echo "                   |                     "
+	echo "                   |                     "
+	echo "      |ZZzzz      /^\            |ZZzzz  "
+	echo "      |          |~~~|           |       "
+	echo "      |        |-     -|        / \      "
+	echo "     /^\       |[]+    |       |^^^|     "
+	echo "  |^^^^^^^|    |    +[]|       |   |     "
+	echo "  |    +[]|/\/\/\/\^/\/\/\/\/|^^^^^^^|   "
+	echo "  |+[]+   |~~~~~~~~~~~~~~~~~~|    +[]|   "
+	echo "  |       |  []   /^\   []   |+[]+   |   "
+	echo "  |   +[]+|  []  || ||  []   |   +[]+|   "
+	echo "  |[]+    |      || ||       |[]+    |   "
+	echo "  |_______|------------------|_______|   "
+	echo "                                         "
+	echo "                                         "
+	echo "${GREEN}    You have just committed secret  " 
+	echo "${RED}    Do not ever commit again       "
+	echo "${NO_COLOR}"
+	echo "${RED}---------------------------------------------------------------- ${NO_COLOR}"
+
+	exit 1;
+else
+	echo "${YELLOW}---------------------------------------------------------------- ${NO_COLOR}"
+	echo "${YELLOW}* $FILE_NAME Not Found in commit - commit allowed ${NO_COLOR}"
+	echo "${YELLOW}---------------------------------------------------------------- ${NO_COLOR}"
+
+fi

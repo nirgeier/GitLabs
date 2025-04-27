@@ -1,0 +1,27 @@
+git show-branch --all --color=always | less -R
+
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+
+# Temporarily rewrite history without altering commits.
+git replace HEAD~1 HEAD~2  # Swap commits locally
+git --no-replace-objects log  # View history without replacements
+
+# Show commits in "feature-branch" not in "main"
+git cherry main feature-branch  
+
+# Find "TODO" in entire repo history
+git grep --heading -n -C 3 'TODO' :/  
+
+# Search in a specific tag
+git grep -e 'bug' v2.1.0  
+
+# Compare commit ranges (e.g., before/after rebase):
+git range-diff main..feature-branch main..rebase-feature  
+
+### Git log
+
+# Search for Specific Code Changes
+git log -S"functionName" -p
+
+# Track File History (Including Renames)
+git log --follow -- path/to/file

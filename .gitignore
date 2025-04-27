@@ -1,0 +1,8 @@
+/tmp/
+.c9/
+gitflow/
+.history
+.DS_Store
+
+rerere-demo/**
+bisect-demo/**
