@@ -13,9 +13,9 @@ SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
 # Create a new directory for the demo
 echo -e "${CYAN}* Creating demo repository${NO_COLOR}"
-rm -rf sparse-demo sparse-checkout-demo
-git init sparse-demo --quiet
-cd  sparse-demo
+rm -rf /tmp/sparse-demo /tmp/sparse-checkout-demo
+git init /tmp/sparse-demo --quiet
+cd /tmp/sparse-demo
 
 echo -e "${CYAN}* Creating files${NO_COLOR}"
 mkdir -p server client common 
@@ -28,9 +28,10 @@ git commit -m "Initial commit" --quiet
 echo -e "${YELLOW}* Repository content${NO_COLOR}"
 tree .
 
+echo -e "${GREEN}Press any key to continue...${NO_COLOR}"
 echo -e ""
-echo -e "${RED}--------------------------------------------${NO_COLOR}"
-echo -e ""
+read -t 120
+
 echo -e "${YELLOW}* Sparse checkout${NO_COLOR}"
 
 echo -e "${CYAN}* Clone repository with sparse checkout enabled${NO_COLOR}"

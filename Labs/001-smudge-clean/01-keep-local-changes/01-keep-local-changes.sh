@@ -7,7 +7,6 @@
 # This is useful for keeping sensitive information out of the repository while still 
 # allowing developers to work with the file locally.
 
-
 clear
 # Load the colors script
 # Get the root folder of our demo folder
@@ -74,7 +73,6 @@ echo -e "${CYAN}* Committing content to demo repository${NO_COLOR}"
 git commit -m"Initial Commit without smudge-clean" --quiet
 
 echo -e "${RED}>>> Press any key to continue${NO_COLOR}"
-
 # Wait for user input to continue (max timeout 600 seconds)
 read -t 600 -n 1
 
@@ -104,11 +102,15 @@ echo -e "------------------------------------------------"
 git --no-pager diff --cached .env
 echo -e "------------------------------------------------"
 
+echo -e "${RED}>>> Press any key to continue${NO_COLOR}"
+# Wait for user input to continue (max timeout 600 seconds)
+read -t 600 -n 1
+
 echo -e "${CYAN}* Commit changes${NO_COLOR}"
 
 git commit -m"Second commit with smudge-clean" --quiet
 echo -e "${CYAN}* Pushing second commit to git${NO_COLOR}"
-git push --set-upstream origin main --quiet
+#git push --set-upstream origin main --quiet
 
 echo -e ""
 echo -e "${YELLOW}* Current .env file content${NO_COLOR}"
@@ -125,6 +127,10 @@ echo -e "${YELLOW}$(git show HEAD:.env)${NO_COLOR}"
 echo -e "----------------------------------------------------------"
 echo -e ""
 
+echo -e "${RED}>>> Press any key to continue${NO_COLOR}"
+# Wait for user input to continue (max timeout 600 seconds)
+read -t 600 -n 1
+
 echo -e "${CYAN}* Delete .env file         ${PURPLE}\$(rm -rf .env)${NO_COLOR}"
 rm -rf .env
 
@@ -136,3 +142,16 @@ echo -e "----------------------------------------------------------"
 echo -e "${GREEN}$(cat .env)${NO_COLOR}"
 echo -e "----------------------------------------------------------"
 echo -e ""
+
+echo -e "${RED}>>> Press any key to continue${NO_COLOR}"
+# Wait for user input to continue (max timeout 600 seconds)
+read -t 600 -n 1
+echo -e "${CYAN}* Show the content of .env file in the repository: ${PURPLE}\$(git show HEAD:.env)${NO_COLOR}"
+echo -e "----------------------------------------------------------"
+git show HEAD:.env 
+echo -e "----------------------------------------------------------"
+
+echo -e "${CYAN}* Show the content of .env file in the working directory: ${PURPLE}\$(cat .env)${NO_COLOR}"
+echo -e "----------------------------------------------------------"
+cat .env
+echo -e "----------------------------------------------------------"

@@ -16,6 +16,7 @@
     - [`--cone` Mode:](#--cone-mode)
     - [What Happens Under the Hood:](#what-happens-under-the-hood)
     - [Demo Code Snippet:](#demo-code-snippet)
+    - [Additional Commands:](#additional-commands)
 
 ---
 
@@ -82,4 +83,25 @@ tree .
 
 # Check the status of the repository
 git status
+```
+---
+
+### Additional Commands:
+
+```sh
+### Activate the mode sparse-checkout:
+### This command configures the repository to enable “sparse” mode.
+git sparse-checkout init
+
+### Define the paths to include:
+### To specify which files or folders to include in our workspace:
+git sparse-checkout set <folder1> <folder2> ...
+
+### For example :
+git sparse-checkout set client/ server/
+
+
+### Disable sparse-checkout:
+### To disable sparse-checkout and restore the full repository:
+git sparse-checkout disable
 ```
