@@ -4,8 +4,9 @@
 NO_COLOR='\033[0m'       # Text Reset
 
 BAR_WIDTH=50
-CHAR_COMPLETE="#"
-CHAR_REMAIN="-"
+CHAR_COMPLETE="■"
+CHAR_REMAIN="□"
+
 
 # Get the start time of the script
 TIME_START=$(date +%s)
@@ -67,12 +68,12 @@ function show_progress {
     local done=$(bc <<< "scale=0; $BAR_WIDTH * $percent / 100" )
     local todo=$(bc <<< "scale=0; $BAR_WIDTH - $done" )
 
-    # Generate the complete & ramain sections
-    local compelted=$(printf "%${done}s" | tr " " "${CHAR_COMPLETE}")
+    # Generate the complete & remain sections
+    local completed=$(printf "%${done}s" | tr " " "${CHAR_COMPLETE}")
     local remaining=$(printf "%${todo}s" | tr " " "${CHAR_REMAIN}")
 
     # Calculate color values and print the progress bar
-    echo -en "\r$message $(set_color $percent "[${compelted}${remaining}]")${NO_COLOR} ${percent}% $(convert_seconds_to_time $TIME_LEFT)  "
+    echo -en "\r\n$message $(set_color $percent "${completed}${remaining}")${NO_COLOR} ${percent}% $(convert_seconds_to_time $TIME_LEFT)  "
     
 }
 
@@ -88,7 +89,7 @@ function update_time_stamp(){
   # Get the current time in seconds and calculate the time elapsed
   TIME_RUNNING=$(bc <<< "$(date +%s)-$TIME_START")
 
-  # Calculate single step avarage time
+  # Calculate single step average time
   stepTime=$(bc <<< "scale=3; $TIME_RUNNING/$STEPS_COMPLETED" )
   
   # Calculate the required time
@@ -116,8 +117,8 @@ function set_color() {
   G=$(( 255 - $R ))
   B=0
 
-  # Print the number with its calculated color
-  printf "\e[38;2;%d;%d;%dm%s\e[0m\n" $R $G $B "$message"
+  # Print the number with its calculated color (no newline)
+  printf "\e[38;2;%d;%d;%dm%s\e[0m" $R $G $B "$message"
 }
 
 ################################################################
