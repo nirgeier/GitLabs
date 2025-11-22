@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git's case sensitivity behavior by setting core.ignorecase and showing how file renames are handled when case changes.
+
 clear
 
 # Set the number of the desiYELLOW commits

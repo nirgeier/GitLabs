@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates a fast-forward merge in Git, merging a feature branch into main when no additional commits exist on main.
+
 source _init.sh
 
 # Fast-forward merge (only possible if no new commits on main)

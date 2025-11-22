@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates analyzing code similarity between commits and files in a Git repository.
+
 # Function to set up a sample repository
 setup_repo() {
     mkdir git-similarity-demo

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates a squash merge in Git, combining all commits from a feature branch into a single commit on main.
+
 source _init.sh
 
 # Squash merge

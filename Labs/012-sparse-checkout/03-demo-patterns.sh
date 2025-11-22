@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git sparse checkout with pattern matching to include files based on glob patterns.
+
 clear
 # Load the colors script
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

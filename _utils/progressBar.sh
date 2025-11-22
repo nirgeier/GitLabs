@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script provides functions to display a progress bar in the terminal, including initialization, progress update, color scaling, and time conversion.
+
 # Reset
 NO_COLOR='\033[0m'       # Text Reset
 
@@ -73,7 +75,7 @@ function show_progress {
     local remaining=$(printf "%${todo}s" | tr " " "${CHAR_REMAIN}")
 
     # Calculate color values and print the progress bar
-    echo -en "\r\n$message $(set_color $percent "${completed}${remaining}")${NO_COLOR} ${percent}% $(convert_seconds_to_time $TIME_LEFT)  "
+    echo -en "\r\n$message $(set_color $percent "${completed}${remaining}")${NO_COLOR} ${percent}% $(convert_seconds_to_time $TIME_LEFT)"
     
 }
 

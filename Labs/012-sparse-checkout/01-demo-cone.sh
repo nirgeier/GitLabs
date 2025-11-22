@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git sparse checkout in cone mode, allowing selective checkout of directories.
+
 clear
 # Load the colors script
 # Get the root folder of our demo folder

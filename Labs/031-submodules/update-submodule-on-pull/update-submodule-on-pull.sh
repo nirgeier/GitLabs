@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates updating Git submodules automatically on pull operations.
+
 ###
 ### This demo will demonstrate how to update submodules on 
 ### a git repository when the pull command is executed

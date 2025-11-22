@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git's 'ours' merge strategy, which resolves conflicts by always taking the current branch's version.
+
 clear
 # Load the colors script
 # Get the root folder of our demo folder

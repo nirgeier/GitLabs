@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates creating Git tags (lightweight and annotated) on random commits in a repository and displaying tag information.
+
 clear
 
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

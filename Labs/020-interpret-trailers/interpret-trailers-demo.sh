@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git interpret-trailers to manage commit message trailers.
+
 clear
 # Load the colors script
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

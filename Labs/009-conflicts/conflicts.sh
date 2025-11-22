@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates creating and handling Git merge conflicts by setting up branches with conflicting changes to the same file.
+
 clear
 tabs 2
 

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git check-attr to query attributes set in .gitattributes.
+
 clear
 # Load the colors script
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

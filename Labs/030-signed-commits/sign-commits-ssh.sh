@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates signing Git commits using SSH keys.
+
 cd        /tmp
 rm -rf    /tmp/local-repo
 git init  /tmp/local-repo

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git blame with options to track code origins, ignoring whitespace and following copies.
+
 clear
 # Load the colors script
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

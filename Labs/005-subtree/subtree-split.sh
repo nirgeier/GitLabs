@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# This script demonstrates the git subtree split command.
+# It creates a repository with dummy content in 'client' and 'server' folders,
+# makes commits to both, then uses 'git subtree split' to split each folder
+# into its own branch (client_branch and server_branch).
+# This shows how to extract subdirectories into separate branches.
+
 clear
 
 cd "$(dirname "$0")"

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates the difference between using the 'mv' command and 'git mv' for renaming files in a Git repository.
+
 clear
 
 # Set the number of the desired commits

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git sparse checkout in no-cone mode, using patterns to include specific files.
+
 clear
 # Load the colors script
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

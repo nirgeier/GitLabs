@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git rerere (reuse recorded resolution) to automatically resolve recurring merge conflicts.
+
 clear
 # Load the colors script
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

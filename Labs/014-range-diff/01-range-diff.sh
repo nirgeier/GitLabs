@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git range-diff to compare commit ranges before and after operations like rebase.
+
 clear
 # Load the colors script
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

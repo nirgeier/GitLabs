@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates the use of git bisect to identify the commit that introduced a bug by creating a repository with commits, introducing a bug, and running bisect with a test script.
+
 clear
 
 # Set the number of the desired commits

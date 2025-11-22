@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git clean command with various options to remove untracked and ignored files.
+
 clear
 # Load the colors script
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

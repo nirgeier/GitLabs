@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git assume-unchanged flag to ignore changes to tracked files.
+
 clear
 
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates setting up Git hooks to enforce commit message formatting standards by configuring hooksPath and attempting commits with different messages.
+
 clear
 
 # Set the number of the desired commits

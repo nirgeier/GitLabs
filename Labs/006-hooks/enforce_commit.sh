@@ -1,4 +1,6 @@
 #!/bin/sh
+
+# This script is a Git pre-receive hook that enforces commit message formatting standards, rejecting pushes with invalid commit messages.
 #Pickup the commit details
 while read oldrev newrev refname
 do

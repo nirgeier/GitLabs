@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates a no fast-forward merge in Git, creating a merge commit even when fast-forward is possible.
+
 source _init.sh
 
 # No fast-forward merge

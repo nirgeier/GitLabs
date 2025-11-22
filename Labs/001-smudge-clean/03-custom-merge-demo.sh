@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates the use of a custom Git merge driver to resolve merge conflicts automatically using a specified script.
+
 clear
 # Load the colors script
 # Get the root folder of our demo folder

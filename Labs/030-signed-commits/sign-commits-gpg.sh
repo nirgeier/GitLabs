@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates signing Git commits using GPG keys.
+
 # Clone the original repo
 cd        /tmp
 rm -rf    /tmp/local-repo

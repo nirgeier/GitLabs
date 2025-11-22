@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script provides various terminal animation functions including spinning loader, snake dot, and pulsing star, with a menu to select one.
+
 # Spinning line animation using single characters
 spinner() {
     

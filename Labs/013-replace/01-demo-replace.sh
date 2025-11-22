@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git replace command to replace one commit with another in the history.
+
 clear
 # Load the colors script
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

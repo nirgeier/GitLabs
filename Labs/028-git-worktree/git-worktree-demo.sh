@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git worktree feature to work on multiple branches simultaneously.
+
 clear
 # Load the colors script
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

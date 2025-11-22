@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git operations with multiple remotes, including creating repositories, adding remotes, fetching, and cherry-picking commits between remotes.
+
 cd "$(dirname "$0")"
 SCRIPT_DIR="$(pwd)"
 

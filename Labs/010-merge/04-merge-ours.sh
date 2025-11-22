@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates a merge using the 'ours' strategy in Git, which keeps the current branch's changes and discards the other branch's changes.
+
 source _init.sh
 
 # Ours/theirs merge strategy

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates Git notes feature to add metadata to commits.
+
 clear
 # Load the colors script
 ROOT_FOLDER=$(git rev-parse --show-toplevel)

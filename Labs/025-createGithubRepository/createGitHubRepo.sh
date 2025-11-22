@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script demonstrates creating a new repository on GitHub using the API and setting up remotes.
+
 # Your GitHub token
 TOKEN="ghp_xxxxxxxxxxxxxxx"
 

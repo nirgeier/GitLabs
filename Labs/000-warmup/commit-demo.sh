@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# This script demonstrates basic Git operations: creating a repository,
+# adding files, making commits, and viewing commit history.
+# It creates a temporary demo repository, performs commits, shows the log,
+# and then cleans up.
+
 clear
 # Load the colors script
 ROOT_FOLDER=$(git rev-parse --show-toplevel)
