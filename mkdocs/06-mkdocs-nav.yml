@@ -1,0 +1,55 @@
+###
+### mkdocs-nav.yml
+###
+
+nav:
+  - Welcome: welcome.md
+  - Labs:
+      - index.md
+      - 000 Warmup:
+          - Lab 000 - Warmup: 000-warmup/README.md
+          - Git Labs: 000-warmup/Lab01-SimpleCommit.md
+          - Git Labs: 000-warmup/Lab02-StagingAndStashing.md
+      - 001 Smudge Clean:
+          - Advanced Git - Smudge Clean: 001-smudge-clean/README.md
+          - 01 Keep Local Changes:
+              - Keep Local Changes with Git Smudge and Clean Filters: 001-smudge-clean/01-keep-local-changes/README.md
+      - Lab 002 - Git Log: 002-log/README.md
+      - Lab 003 - Multiple Remotes: 003-multiple-remotes/README.md
+      - Lab 004 - Git Bisect: 004-bisect/README.md
+      - Lab 005 - Git Subtree: 005-subtree/README.md
+      - Lab 006 - Git Hooks: 006-hooks/README.md
+      - Lab 007 - Case Sensitive: 007-case-sensitive/README.md
+      - Lab 008 - Git Tags: 008-tags/README.md
+      - Lab 009 - Git Conflicts: 009-conflicts/README.md
+      - Lab 010 - Git Merge: 010-merge/README.md
+      - Lab 011 - Git MV: 011-git-mv/README.md
+      - Lab 012 - Sparse Checkout: 012-sparse-checkout/README.md
+      - Lab 013 - Git Replace: 013-replace/README.md
+      - Lab 014 - Range Diff: 014-range-diff/README.md
+      - Lab 015 - Git Blame: 015-blame/README.md
+      - Lab 016 - Git Clean: 016-clean/README.md
+      - Lab 017 - Assume Unchanged: 017-assume-unchaged/README.md
+      - Lab 018 - Git Notes: 018-git-notes/README.md
+      - Lab 019 - Format Patch: 019-format-patch/README.md
+      - Lab 020 - Interpret Trailers: 020-interpret-trailers/README.md
+      - Lab 021 - Check Ignore: 021-check-ignore/README.md
+      - Lab 022 - Check Attr: 022-check-attr/README.md
+      - Lab 023 - Assume Unchanged (Advanced): 023-assume-unchaged/README.md
+      - Lab 024 - Check Ignore (Advanced): 024-check-ignore/README.md
+      - Lab 025 - Create GitHub Repository: 025-createGithubRepository/README.md
+      - Lab 026 - Git Notes (Advanced): 026-git-notes/README.md
+      - Lab 027 - Git Similarity: 027-git-similarity/README.md
+      - Lab 028 - Git Worktree: 028-git-worktree/README.md
+      - Lab 029 - Interpret Trailers (Advanced): 029-interpret-trailers/README.md
+      - Lab 030 - Signed Commits: 030-signed-commits/README.md
+      - Lab 031 - Git Submodules: 031-submodules/README.md
+      - Lab 032 - Rerere: 032-rerere/README.md
+      - Lab 033 - Git Reflog: 033-reflog/README.md
+      - Lab 034 - Git Bundle: 034-bundle/README.md
+      - Lab 035 - Git Archive: 035-archive/README.md
+      - Lab 036 - Cherry Pick: 036-cherry-pick/README.md
+      - Lab 037 - Git Filter-Repo: 037-filter-repo/README.md
+      - Lab 038 - Git Maintenance: 038-maintenance/README.md
+      - Lab 039 - Git LFS: 039-lfs/README.md
+      - List of Labs: index.md

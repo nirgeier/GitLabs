@@ -1,0 +1,12 @@
+###
+### mkdocs-site.yml
+###
+docs_dir: Labs
+edit_uri: ""
+repo_name: nirgeier/GitLabs
+repo_url: https://github.com/nirgeier/GitLabs
+site_author: Nir Geier - nirgeier@gmail.com
+site_description: A collection of Git Labs for learning and practicing Git skills.
+site_dir: ./mkdocs-site
+site_name: GitLabs
+site_url: https://nirgeier.github.io/GitLabs/
